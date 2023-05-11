@@ -1,0 +1,166 @@
+:root {
+	--light: #f9d3ca;
+	--dark: #530027;
+  }
+
+@font-face {
+    font-family: 'watermelon';
+    src: url('tbnd_wm-webfont.woff2') format('woff2'),
+         url('tbnd_wm-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: Arial, Helvetica, sans-serif;
+	color: black;
+    height: 100%;
+    position: relative;
+    margin:0px;
+	background-color: white;
+	font-size: 16px;
+}
+
+img {
+	display: block;
+	margin: 0 auto;
+
+	max-width: 100%;
+	height: auto;
+	max-height: 20vh;
+}
+
+header {
+	margin: 0px;
+	padding: 0px;
+}
+h1{
+
+	margin: 0;
+	padding: 10px;
+	text-align: center;
+	font-size: 35px;
+	color: var(--dark);	
+
+}
+
+.container {
+	margin: auto;
+	max-width: 100%;
+	padding: 10px;
+	padding-bottom: 20vh;
+	font-size: em;
+}
+
+
+#menu-background{
+	background-color: pink;
+	background-image: url("whisk-splash-1080.jpeg");
+	height: auto 	;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+h2 {
+	margin-top: 20px;
+}
+
+h2 {
+	margin-top: 20px;
+}
+
+h3 {
+	margin-top: 10px;
+	margin-bottom: 0px;
+	padding: 0px;
+	font-size: 2em;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+  }
+  
+  li {
+	margin: 0;
+	padding: 0;
+  }
+  
+.menu {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	grid-gap: 10px;
+}
+
+
+.category {
+	display: grid;
+
+
+	border-radius: 10px;
+
+	background-color: rgba(255, 255, 255, 0.9 );
+	box-shadow: 0px 0px 5px rgba(0, 0,0);
+
+  	padding-top: 0px;
+  	padding-right: 20px;
+  	padding-bottom: 0px;
+  	padding-left: 20px;
+
+	width: 300px;
+
+	text-align: center;
+	border-radius: 10px;
+	
+}
+
+.logo-font{
+	font-family: 'watermelon';
+}
+.category-cost{
+	color: var(--dark);
+	font-size: .75em;
+}
+.category-popular{
+	color: #ff0000;
+	font-size: 1.5em;
+}
+
+	.menu-item {
+		display: grid;
+
+		grid-gap: 20px;
+		padding: 20px;
+
+
+		border-radius: 10px;
+		background-color: #ffffff;
+		box-shadow: 0px 0px 5px rgba(0, 0,0)
+		
+	}
+
+.test{
+	margin: auto;
+	max-width: 800px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 20px;
+	padding: 20px;
+	border-radius: 10px;
+	background-color: #fff;
+}
