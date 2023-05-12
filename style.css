@@ -5,8 +5,8 @@
 
 @font-face {
     font-family: 'watermelon';
-    src: url('tbnd_wm-webfont.woff2') format('woff2'),
-         url('tbnd_wm-webfont.woff') format('woff');
+    src: url('/tbnd_wm-webfont.woff2') format('woff2'),
+         url('/tbnd_wm-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -66,17 +66,13 @@ h1{
 
 #menu-background{
 	background-color: pink;
-	background-image: url("whisk-splash-1080.jpeg");
+	background-image: url("/whisk-splash-1080.jpeg");
 	height: auto 	;
 	width: 100%;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
-
-h2 {
-	margin-top: 20px;
-}
 
 h2 {
 	margin-top: 20px;
