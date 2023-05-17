@@ -30,6 +30,7 @@ body {
     margin:0px;
 	background-color: white;
 	font-size: 16px;
+
 }
 
 img {
@@ -38,8 +39,11 @@ img {
 
 	max-width: 100%;
 	height: auto;
-	max-height: 20vh;
+	/**/
 }
+#top-logo {
+	max-height: 25vh;
+  }
 
 header {
 	margin: 0px;
@@ -75,13 +79,34 @@ h1{
 
 #section-two{
 	background-color: var(--dark);
-	/*background-image: url("static/whisk-splash-1080.jpeg");*/
 	height: auto ;
 	width: 100%;
 	background-repeat: no-repeat;
 	background-size: cover;
+	text-align: center;
+
+}
+#section-three{
+	background-color: var(--dark);
+	height: auto ;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+footer{
+	background-color: var(--dark);
+	height: auto ;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
 }
 
+.visit-us {
+	width: 100px;
+	height: 100px;
+  }
 
 h2 {
 	margin-top: 20px;
@@ -124,7 +149,7 @@ ul {
 
   	padding-top: 0px;
   	padding-right: 20px;
-  	padding-bottom: 0px;
+  	padding-bottom: 10px;
   	padding-left: 20px;
 
 	width: 300px;
@@ -169,3 +194,81 @@ ul {
 	border-radius: 10px;
 	background-color: #fff;
 }
+
+/* carousel */
+.Marquee {
+	/*background: linear-gradient(-135deg, #008ed9, #8b00db);*/
+	width: 99vw;
+	height: auto;
+	box-sizing: border-box;
+	color: #fff;
+	font-weight: 200;
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+	display: flex;
+	background: var(--dark);
+
+	padding-bottom: 5px;
+  }
+  .Marquee-content {
+	display: flex;
+	animation: marquee 60s linear infinite running;
+  }
+  .Marquee-content:hover {
+	animation-play-state: paused;
+  }
+  .Marquee-tag {
+	width: 600px;
+	height: 45vh;
+	margin: 0 1px;
+
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.5s ease;
+  }
+
+  .Marquee-tag img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+  }
+  .Marquee-tag:hover {
+	background: var(--light);
+	transform: scale(1.1);
+	cursor: pointer;
+  }
+  @-moz-keyframes marquee {
+	0% {
+	  transform: translateX(0);
+	}
+	100% {
+	  transform: translate(-50%);
+	}
+  }
+  @-webkit-keyframes marquee {
+	0% {
+	  transform: translateX(0);
+	}
+	100% {
+	  transform: translate(-50%);
+	}
+  }
+  @-o-keyframes marquee {
+	0% {
+	  transform: translateX(0);
+	}
+	100% {
+	  transform: translate(-50%);
+	}
+  }
+  @keyframes marquee {
+	0% {
+	  transform: translateX(0);
+	}
+	100% {
+	  transform: translate(-50%);
+	}
+  }
+  
