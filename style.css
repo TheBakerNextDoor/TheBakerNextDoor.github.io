@@ -208,12 +208,12 @@ ul {
 	overflow: hidden;
 	display: flex;
 	background: var(--dark);
-
-	padding-bottom: 5px;
+	padding-top: 5px;
   }
   .Marquee-content {
 	display: flex;
 	animation: marquee 60s linear infinite running;
+	padding: 0px;
   }
   .Marquee-content:hover {
 	animation-play-state: paused;
