@@ -19,4 +19,10 @@ window.addEventListener("scroll", function() {
       }
     });
   });
+
+  const containers = document.querySelectorAll('.fade-down-container');
+
+  containers.forEach((container, index) => {
+    container.style.animationDelay = `${index * 0.25}s`;
+  });
   

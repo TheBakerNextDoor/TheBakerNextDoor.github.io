@@ -304,4 +304,20 @@ ul {
 .fade-in {
 	opacity: 1;
 }
-  
+
+.fade-down-container{
+	opacity: 0;
+	transform: translateX(-5%);
+	animation: fade-down 1s forwards;
+}
+
+@keyframes fade-down {
+	from {
+	  opacity: 0;
+	  transform: translateX(-5%);
+	}
+	to {
+	  opacity: 1;
+	  transform: translateX(0);
+	}
+  }
