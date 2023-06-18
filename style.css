@@ -2,7 +2,8 @@
 	--light: #f9d3ca;
 	--dark: #530027;
 	--max-width: 1600px;
-	--img-box: 250px;
+	--img-box-dsktp: 250px;
+	--img-box-mbl: 100px;
   }
 
 @font-face {
@@ -100,6 +101,7 @@ h1{
 	background-size: cover;
 	text-align: center;
 }
+
 footer{
 	background-color: var(--dark);
 	height: auto ;
@@ -234,8 +236,8 @@ ul {
 }
 
 .gallery-tag{
-	width: var(--img-box); /* Set the desired width */
-	height: var(--img-box); /* Set the desired height */
+	width: var(--img-box-dsktp); /* Set the desired width */
+	height: var(--img-box-dsktp); /* Set the desired height */
 	margin: 10px;
 
 	display: flex; /* Use flexbox to center the image */
@@ -247,6 +249,14 @@ ul {
 	background-color: rgba(255, 255, 255, 0.9 );
 	box-shadow: 0px 0px 5px rgba(0, 0,0);
 }
+
+@media (max-width: 500px) { 
+	.gallery-tag{
+		width: var(--img-box-mbl); /* Set the desired width */
+		height: var(--img-box-mbl); /* Set the desired height */
+		margin: 2px;
+}
+
 
 
 .gallery-tag a img {
