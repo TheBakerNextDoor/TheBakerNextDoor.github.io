@@ -23,6 +23,11 @@ window.addEventListener("scroll", function() {
   const containers = document.querySelectorAll('.fade-down-container');
 
   containers.forEach((container, index) => {
-    container.style.animationDelay = `${index * 0.25}s`;
+    if (window.innerWidth < 768) {
+        // For screens smaller than 768px (mobile devices)
+        container.style.animationDelay = `${index * 0.5}s`;
+    } else {
+        container.style.animationDelay = `${index * 0.25}s`;
+    }
   });
   
