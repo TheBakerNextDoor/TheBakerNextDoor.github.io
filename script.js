@@ -1,3 +1,5 @@
+
+
 window.addEventListener("scroll", function() {
     var fadeContainers = document.querySelectorAll(".fade-container");
     var screenPosition;

@@ -14,7 +14,7 @@ original_suffix = '-original'
 crop_percentage = 5
 
 # Define the name of the HTML output file
-html_output_file = 'gallery.txt'
+html_output_file = 'gallery.html'
 
 # Function to process and save images
 def process_images(src_folder, dst_folder, html_output_file):
