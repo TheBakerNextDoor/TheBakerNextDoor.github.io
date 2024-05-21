@@ -298,7 +298,7 @@ ul {
 /*FADE IN CONTAINER EFFECT */
 .fade-container {
 	opacity: 0;
-	transition: opacity 0.75s ease-in-out;
+	transition: opacity 0.90s ease-in-out;
 }
   
 .fade-in {
