@@ -1,95 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="recipes.css">
-    <title>Chocolate Chip Cookies Recipe</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="recipes.css" />
+  <title>Chocolate Chip Cookies Recipe — The Baker Next Door</title>
+
+  <!-- Structured data (Recipe) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Recipe",
+    "name": "Chocolate Chip Cookies",
+    "author": { "@type": "Person", "name": "The Baker Next Door" },
+    "recipeYield": "About 18–24 cookies (depending on scoop size)",
+    "prepTime": "PT20M",
+    "cookTime": "PT12M",
+    "totalTime": "PT32M",
+    "recipeIngredient": [
+      "1 cup unsalted butter, softened (2 sticks)",
+      "1.25 cups light brown sugar, packed (272 g)",
+      "1/2 cup granulated sugar (100 g)",
+      "2 large eggs, room temperature",
+      "1 tablespoon vanilla extract",
+      "3 cups all-purpose flour (≈390 g)",
+      "2 teaspoons corn starch",
+      "1 1/2 teaspoons kosher salt",
+      "1 teaspoon baking soda",
+      "2–3 cups chocolate chips (≈208 g)",
+      "parchment paper (for lining sheets)"
+    ],
+    "recipeInstructions": [
+      "Stage ingredients and equipment.",
+      "Cream butter and sugars until light and fluffy; add eggs one at a time, then vanilla.",
+      "Whisk dry ingredients together; slowly mix dry into wet until combined.",
+      "Fold in chocolate chips.",
+      "Scoop onto parchment-lined sheets; chill if desired.",
+      "Preheat oven to 350°F (175°C) and bake 10–14 minutes until edges are golden.",
+      "Cool on rack and enjoy."
+    ]
+  }
+  </script>
 </head>
 <body>
-    <header>
-        <h1>Chocolate Chip Cookies Recipe</h1>
-    </header>
+  <header class="site-header">
+    <h1>Chocolate Chip Cookies</h1>
+    <p class="subtitle">A simple, classic cookie from The Baker Next Door</p>
+  </header>
 
-    <section id="ingredients">
-        <h2>Ingredients</h2>
-        <ul>
-            <li>Unsalted Butter - 1 cup (softened) [2 sticks] - Phase 1</li>
-            <li>Light Brown Sugar - 1.25 cups (packed) [272g] - Phase 2</li>
-            <li>Granulated Sugar - 0.5 cup [100g] - Phase 2</li>
-            <li>Large Eggs - 2 (room temperature) - Phase 2</li>
-            <li>Vanilla Extract - 1 tablespoon - Phase 2</li>
-            <li>Flour - 3 cups (loosely packed) [~390g] - Phase 3</li>
-            <li>Corn Starch - 2 teaspoons - Phase 3</li>
-            <li>Kosher Salt - 1.5 teaspoons - Phase 3</li>
-            <li>Baking Soda - 1 teaspoon - Phase 3</li>
-            <li>Chocolate Chips - 2-3 cups [208g]- Phase 4</li>
-            <li>Parchment Paper - 3 sheets (1 per pan) - Phase 5</li>
+  <main>
+    <article class="recipe" aria-labelledby="recipe-title">
+      <h2 id="recipe-title" class="visually-hidden">Chocolate Chip Cookies Recipe</h2>
+
+      <section id="ingredients" class="card">
+        <h3>Ingredients</h3>
+        <ul class="ingredients-list">
+          <li data-phase="1"><span class="qty">1 cup</span> Unsalted butter (softened) — 2 sticks</li>
+          <li data-phase="2"><span class="qty">1.25 cups</span> Light brown sugar (packed) — 272 g</li>
+          <li data-phase="2"><span class="qty">1/2 cup</span> Granulated sugar — 100 g</li>
+          <li data-phase="2"><span class="qty">2</span> Large eggs (room temperature)</li>
+          <li data-phase="2"><span class="qty">1 tbsp</span> Vanilla extract</li>
+          <li data-phase="3"><span class="qty">3 cups</span> All-purpose flour (≈390 g)</li>
+          <li data-phase="3"><span class="qty">2 tsp</span> Corn starch</li>
+          <li data-phase="3"><span class="qty">1.5 tsp</span> Kosher salt</li>
+          <li data-phase="3"><span class="qty">1 tsp</span> Baking soda</li>
+          <li data-phase="4"><span class="qty">2–3 cups</span> Chocolate chips (≈208 g)</li>
+          <li data-phase="5"><span class="qty">3 sheets</span> Parchment paper (one per pan)</li>
         </ul>
-    </section>
+      </section>
 
-    <section id="equipment">
-        <h2>Equipment</h2>
+      <section id="equipment" class="card">
+        <h3>Equipment</h3>
         <ul>
-            <li>Cookie Sheet</li>
-            <li>Oven</li>
-            <li>Hand Mixer</li>
-            <li>Scraper</li>
-            <li>Large Bowl (Dry)</li>
-            <li>Large Bowl (Wet)</li>
-            <li>Scoop (Large / 3tb)</li>
-            <li>Fridge</li>
-            <li>Cooling Rack</li>
+          <li>Cookie sheet(s)</li>
+          <li>Oven</li>
+          <li>Hand mixer (or stand mixer)</li>
+          <li>Scraper / spatula</li>
+          <li>Large mixing bowls (wet & dry)</li>
+          <li>Large scoop (≈3 tbsp)</li>
+          <li>Refrigerator (optional for chilling)</li>
+          <li>Cooling rack</li>
         </ul>
-    </section>
+      </section>
 
-    <section id="instructions">
-        <h2>Instructions</h2>
-        <ol>
-            <!-- Input phases here -->
-            <li><strong>Stage Ingredients</strong>
-                <li><strong>With First mixing bowl (Wet)</strong>
-                <ol><li>> , Add: Unsalted Butter (1c)</li>
-                <li>Hand Mixer, Beat on Low: until light and fluffy (1min)</li>
-                <li>> , Add: light brown sugar (1.25 cups)</li>
-                <li>> , Add: granulated sugar (0.5 cup)</li>
-                <li>Hand Mixer, Beat on Low: until creamed and smooth (3-5min)</li>
-                <li>Use Scapper, on sides, as needed: </li>
-                <li>> , Add one at a time: large eggs (2) (20sec ea)</li>
-                <li>Hand Mixer, Beat on Low: (1 min per)</li>
-                <li>> , Add: Vanilla Extract (1 TBSN) (20sec)</li>
-                <li>Use Scapper, on sides, as needed: </li></ol>
-                <li><strong>With Second medium bowl (dry)</strong>
-                <ol><li>> , Add: Flour (3 cups)</li>
-                <li>> , Add: baking soda (1 tspn)</li>
-                <li>> , Add: corn starch (2 tspn)</li>
-                <li>> , Add: kosher salt (1.5 tspn)</li>
-                <li>> , Whisk: well to combine</li></ol>
-                <li><strong>With Wet bowl</strong>
-                <ol><li>From Dry Bowl, Add slowly: to wet</li>
-                <li>Hand Mixer, Mix until combined: do not overmix</li>
-                <li>> , Add: morsals (bag (2-3 cups))</li>
-                <li>Use Scapper, fold ingredients: </li></ol>
-                <li><strong>With Cookie sheets</strong>
-                <ol><li>> , Add: parchment paper (3 sheets)</li>
-                <li>Scoop, large: from mix, six per sheet</li></ol>
-                <li><strong>With Fridge</strong>
-                <ol><li>Fridge, chill: min 10 minutes per sheet and go directly into oven.</li>
-                <li>Or Can chill over night, and remove from fridge 10min before baking.</li></ol>
-                <li><strong>With Oven</strong>
-                <ol><li>Oven, Preheat: 350</li>
-                <li>Oven, Bake for: 12 min or until edges are golden brown</li>
-                <li>Repeat, For each container: (after 10m dwell)</li>
-                <li>Remove from tray to Cooling Rack: Keep on parchment paper</li>
-                <li>Rest until cool</li></ol>
-                
+      <section id="instructions" class="card">
+        <h3>Instructions</h3>
+        <ol class="instructions-list">
+          <li>
+            <strong>Stage ingredients & equipment.</strong>
+            <p>Preheat oven when ready to bake (350°F / 175°C). Line cookie sheets with parchment paper.</p>
+          </li>
 
-            <!-- end of phases -->
+          <li>
+            <strong>Make the wet mixture</strong>
+            <ol>
+              <li>In the wet bowl, add the softened butter. Beat on low until light and fluffy (~1 minute).</li>
+              <li>Add brown sugar and granulated sugar. Beat on low until creamed and smooth (3–5 minutes). Scrape sides as needed.</li>
+              <li>Add eggs one at a time (20 seconds each), mixing about 1 minute after each addition. Scrape sides as needed.</li>
+              <li>Add vanilla extract (about 20 seconds mixing).</li>
+            </ol>
+          </li>
+
+          <li>
+            <strong>Prepare the dry mixture</strong>
+            <ol>
+              <li>In a separate bowl combine flour, baking soda, corn starch, and kosher salt.</li>
+              <li>Whisk dry ingredients well to combine.</li>
+            </ol>
+          </li>
+
+          <li>
+            <strong>Combine wet & dry</strong>
+            <ol>
+              <li>Slowly add the dry mixture to the wet bowl while mixing on low. Mix until just combined — do not overmix.</li>
+              <li>Fold in the chocolate chips with a spatula until evenly distributed.</li>
+            </ol>
+          </li>
+
+          <li>
+            <strong>Portion & chill (optional)</strong>
+            <ol>
+              <li>Scoop dough (≈3 tbsp per cookie) onto parchment-lined cookie sheets. Six scoops per sheet is suggested but adjust to your sheet size.</li>
+              <li>Chill trays for at least 10 minutes before baking. You may chill overnight; remove from fridge ~10 minutes before baking if chilled long-term.</li>
+            </ol>
+          </li>
+
+          <li>
+            <strong>Bake</strong>
+            <ol>
+              <li>Preheat oven to 350°F (175°C).</li>
+              <li>Bake 10–14 minutes or until edges are golden brown (timing depends on scoop size and oven).</li>
+              <li>After baking, transfer cookies (on parchment) to cooling rack. Let cool completely before storing.</li>
+            </ol>
+          </li>
+
+          <li>
+            <strong>Repeat</strong> Repeat scooping/baking steps for remaining dough.
+          </li>
         </ol>
-    </section>
+      </section>
 
-    <footer>
-        <p>&copy; 2023 The Baker Next Door</p>
-    </footer>
+      <section id="notes" class="card">
+        <h3>Notes</h3>
+        <p>
+          You can adjust sugar ratios and bake time to favor a chewier (shorter time) or crisper (longer time) cookie.
+          Use parchment to easily remove cookies from sheet and for even browning. Store in an airtight container.
+        </p>
+      </section>
+
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2023 The Baker Next Door</p>
+  </footer>
 </body>
 </html>
