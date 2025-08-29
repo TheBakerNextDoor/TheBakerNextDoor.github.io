@@ -1,0 +1,83 @@
+:root {
+	--light: #f9d3ca;
+	--dark: #530027;
+  --ogbackground: fff8f0;
+  --color: 4b2e2e;
+  }
+
+/* Base & Fonts */
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: var(--light);
+  color: var(--dark);
+}
+
+/* Responsive Grid */
+.menu2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+/* Logo Box: transparent background, visible border */
+.logo-box {
+  margin: 0;
+  background: transparent;
+  border: 1px solid rgba(0,0,0,0.0);
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  grid-row: 1; /* fixed to first row */
+  overflow: visible;   /* allow spill */
+  z-index: 1;          /* sit above neighbors if it overlaps */
+}
+
+.logo-box img {
+  display: block;
+  width: 112%;         /* slightly oversized */
+  max-width: none;     /* allow larger than the box */
+  height: auto;
+}
+
+/* Category Cards */
+.category {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 15px;
+
+}
+
+.category h2 {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.7rem;
+  margin-top: 1px;
+  margin-bottom: 0px;
+}
+
+.category .price {
+  font-weight: bold;
+  color: #b3614b;
+  margin-bottom: 10px;
+}
+
+.category ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.category li {
+  margin-bottom: 4px;
+  list-style: square;
+}
+
+.note {
+  font-style: italic;
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
