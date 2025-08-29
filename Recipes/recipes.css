@@ -1,46 +1,54 @@
-/* Reset some default browser styles */
-body, h1, h2, ul, ol, li, p {
-    margin: 0;
-    padding: 0;
+:root{
+  --bg: #fffaf6;
+  --card: #ffffff;
+  --muted: #6b6b6b;
+  --accent: #d88b6a;
+  --pad: 1rem;
+  --max-width: 900px;
+  --phase-1: #fdecea;
+  --phase-2: #fff4e6;
+  --phase-3: #f0f7ff;
+  --phase-4: #f6f7fb;
+  --phase-5: #f3fff0;
 }
 
-/* Style the header */
-header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
+*{box-sizing:border-box}
+body{
+  font-family: system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+  line-height:1.45;
+  background:var(--bg);
+  color:#111;
+  padding:1rem;
+  display:flex;
+  justify-content:center;
 }
 
-/* Style the main content */
-#ingredients, #equipment, #instructions {
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
+main{max-width:var(--max-width); width:100%}
+
+.site-header{ text-align:center; margin-bottom:1rem }
+.site-header h1{ margin:0; font-size:clamp(1.5rem,2.8vw,2.4rem) }
+.subtitle{ color:var(--muted); margin-top:.25rem }
+
+.card{
+  background:var(--card);
+  border-radius:10px;
+  padding:var(--pad);
+  margin-bottom:1rem;
+  box-shadow:0 6px 18px rgba(15,15,15,0.06);
 }
 
-h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
+.ingredients-list li { margin: .4rem 0; padding: .4rem; border-radius:6px; display:flex; gap:.5rem; align-items:center; }
+.ingredients-list li[data-phase="1"]{ background:var(--phase-1) }
+.ingredients-list li[data-phase="2"]{ background:var(--phase-2) }
+.ingredients-list li[data-phase="3"]{ background:var(--phase-3) }
+.ingredients-list li[data-phase="4"]{ background:var(--phase-4) }
+.ingredients-list li[data-phase="5"]{ background:var(--phase-5) }
 
-ul, ol {
-    margin-left: 20px;
-    font-size: 1.2rem;
-}
+.qty{ font-weight:700; min-width:5.5ch; color:var(--accent) }
 
-li {
-    margin-bottom: 5px;
-}
+.instructions-list ol{ margin:0; padding-left:1.1rem }
+.instructions-list li{ margin-bottom:.75rem }
 
-/* Style the footer */
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-}
+.visually-hidden{ position:absolute !important; height:1px; width:1px; overflow:hidden; clip:rect(1px,1px,1px,1px); white-space:nowrap; border:0; padding:0; margin:-1px; }
 
-/* Add additional styles as needed */
+.site-footer{text-align:center; color:var(--muted); font-size:.9rem; margin-top:1rem}
